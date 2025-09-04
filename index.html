@@ -3,205 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anxiety Research Assignment</title>
+    <title>Anxiety Investigation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            background-color: #f7f7f7;
             color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
         }
-        header {
-            background-color: #00f0f0;
-            color: #fff;
-            padding: 25px 0;
+        h1 {
+            color: #007ACC;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        h2 {
-            color: #007f7f;
-            border-bottom: 2px solid #00f0f0;
-            padding-bottom: 5px;
-        }
-        h3 {
-            margin-top: 15px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 15px 0;
-            border-radius: 8px;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        table {
-            border-collapse: collapse;
+        .collapsible {
+            background-color: #fff;
+            color: #007ACC;
+            cursor: pointer;
+            padding: 15px;
             width: 100%;
-            margin-top: 15px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 8px;
+            border: none;
             text-align: left;
+            outline: none;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        footer {
-            background-color: #f2f2f2;
-            color: #555;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
+        .active, .collapsible:hover {
+            background-color: #e6f2ff;
         }
-        .highlight {
-            background-color: #e0ffff;
-            padding: 5px 10px;
-            border-radius: 5px;
+        .content {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        a {
+            color: #007ACC;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul.references {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>Anxiety Investigation</h1>
 
-<header>
-    <h1>Mental Health Issue: Anxiety</h1>
-</header>
+    <button class="collapsible">Investigation Area: Anxiety</button>
+    <div class="content">
+        <p>Anxiety is a natural human emotion that everyone experiences from time to time, often as a reaction to stress or uncertain situations. However, anxiety becomes a disorder when it is excessive, persistent, and interferes with daily life. Anxiety disorders are more than temporary worry or fear—they are mental health conditions that can significantly affect a person’s emotional, physical, and social wellbeing.</p>
+    </div>
 
-<main>
+    <button class="collapsible">Prevalence</button>
+    <div class="content">
+        <p>Anxiety disorders are among the most common mental health conditions worldwide. According to research, approximately 1 in 4 people will experience an anxiety disorder at some point in their lives. It can affect people of all ages, genders, and backgrounds, though studies show that women are more likely to be diagnosed than men.</p>
+    </div>
 
-    <section id="what-is-it">
-        <h2>1. What is it?</h2>
-        <p>Anxiety is more than normal worry. It becomes a disorder when it is <span class="highlight">excessive, persistent (lasting more than six months), and affects daily functioning</span>. Anxiety disorders include:</p>
-        <ul>
-            <li>Generalized Anxiety Disorder (GAD)</li>
-            <li>Panic Disorder</li>
-            <li>Specific Phobias</li>
-            <li>Social Anxiety Disorder</li>
-            <li>Separation Anxiety Disorder</li>
-            <li>Agoraphobia</li>
-            <li>Selective Mutism</li>
-        </ul>
-        <p><strong>Difference from fear:</strong> Fear is a reaction to a recognized threat, whereas anxiety occurs without an immediate danger, often causing distress and interference in life.</p>
-        <img src="images/anxiety1.jpg" alt="Anxious person thinking">
-    </section>
+    <button class="collapsible">Signs and Symptoms</button>
+    <div class="content">
+        <p>The signs of anxiety disorders include persistent, uncontrollable worry or fear, often about everyday situations. People may experience restlessness, irritability, or physical symptoms such as a racing heart, sweating, or tension. Difficulty concentrating, trouble sleeping, and avoiding certain situations are also common indicators. The symptoms may vary in intensity but often interfere with daily functioning.</p>
+    </div>
 
-    <section id="prevalence">
-        <h2>2. Prevalence</h2>
-        <ul>
-            <li><strong>Global:</strong> ~30% of adults experience anxiety disorders at some point in life; 4% at any one time.</li>
-            <li><strong>Australia:</strong> 14.4% of people (16–85) experienced an anxiety disorder in a 12-month period; most common mental health condition in the country.</li>
-            <li><strong>Youth:</strong> 39% of Australians aged 16–24 reported a mental disorder in the past year, including anxiety. Subclinical anxiety is rising, causing sleep issues, muscle tension, and persistent worry.</li>
-        </ul>
-        <img src="images/anxiety2.jpg" alt="Young adult experiencing anxiety">
-    </section>
+    <button class="collapsible">Risk Factors and Causes</button>
+    <div class="content">
+        <p>Anxiety can arise from a combination of genetic, environmental, and psychological factors. Exposure to childhood trauma, abuse, or the loss of a loved one can increase the risk of developing an anxiety disorder. Chronic stress, certain medical conditions, and chemical imbalances in the brain can also contribute. Life experiences, personality traits, and family history play a role in how susceptible someone is to anxiety disorders.</p>
+    </div>
 
-    <section id="symptoms">
-        <h2>3. Signs & Symptoms</h2>
-        <h3>Emotional & Cognitive</h3>
-        <ul>
-            <li>Persistent, uncontrollable worry or fear</li>
-            <li>Restlessness, irritability, difficulty concentrating</li>
-            <li>Racing thoughts, indecision, overthinking</li>
-        </ul>
-        <h3>Physical</h3>
-        <ul>
-            <li>Racing heart, palpitations</li>
-            <li>Muscle tension, headaches, stomach aches</li>
-            <li>Dizziness, tremors, sweating, dry mouth, shortness of breath</li>
-        </ul>
-        <h3>Behavioral</h3>
-        <ul>
-            <li>Avoidance of triggering situations</li>
-            <li>Reduced participation in work, school, or social life</li>
-            <li>Subclinical anxiety sufferers may maintain routines but still experience distress</li>
-        </ul>
-        <img src="images/anxiety3.jpg" alt="Person showing anxiety signs">
-    </section>
+    <button class="collapsible">Treatments and Strategies</button>
+    <div class="content">
+        <p>Anxiety can be managed through various treatments and coping strategies. Cognitive-behavioral therapy (CBT) is a widely used approach that helps people change unhelpful thought patterns. Medication, such as antidepressants or anti-anxiety drugs, may also be prescribed by healthcare professionals. Lifestyle strategies, including regular exercise, mindfulness, meditation, and stress management techniques, can support mental wellbeing. Learning relaxation techniques and developing healthy daily routines are also helpful.</p>
+    </div>
 
-    <section id="risk-factors">
-        <h2>4. Risk Factors / Causes</h2>
-        <h3>Biological & Genetic</h3>
-        <ul>
-            <li>Family history of anxiety or mental health disorders</li>
-            <li>Brain pathway dysfunction affecting threat response</li>
-        </ul>
-        <h3>Environmental & Psychological</h3>
-        <ul>
-            <li>Childhood trauma, abuse, neglect, or loss</li>
-            <li>Chronic stress in work, school, or home life</li>
-            <li>Life adversity combined with genetic predisposition</li>
-        </ul>
-        <h3>Other Factors</h3>
-        <ul>
-            <li>Women are more likely affected</li>
-            <li>Age of onset usually 15–35 years (often before 25)</li>
-            <li>Poverty, family history, and chronic stress increase risk</li>
-        </ul>
-        <img src="images/anxiety4.jpg" alt="Man feeling stressed">
-    </section>
+    <button class="collapsible">Where to Go for Help</button>
+    <div class="content">
+        <p>People experiencing anxiety should seek professional help from a psychologist, psychiatrist, or general practitioner. Support services such as helplines, counselling centers, and mental health organizations can provide immediate guidance and resources. Talking to trusted family members or friends about anxiety can also be an important first step. Early intervention often leads to better outcomes.</p>
+    </div>
 
-    <section id="treatments">
-        <h2>5. Treatments / Strategies</h2>
-        <h3>Therapies</h3>
-        <ul>
-            <li>Cognitive Behavioral Therapy (CBT): Proven effective for adults and youth, including online self-help programs</li>
-            <li>Exposure Therapy (ERP): Useful for phobias and OCD</li>
+    <button class="collapsible">References</button>
+    <div class="content">
+        <ul class="references">
+            <li>Mayo Clinic. (2023). <a href="https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961?utm_source=chatgpt.com" target="_blank">Anxiety disorders: Symptoms and causes</a>.</li>
+            <li>National Institute of Mental Health. (2023). <a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders?utm_source=chatgpt.com" target="_blank">Anxiety disorders</a>.</li>
+            <li>Beyond Blue. (2023). <a href="https://www.beyondblue.org.au/mental-health/anxiety" target="_blank">Anxiety</a>.</li>
         </ul>
-        <h3>Medications</h3>
-        <ul>
-            <li>SSRIs & SNRIs (first-line)</li>
-            <li>Other options: tricyclic antidepressants, benzodiazepines (short-term), beta-blockers</li>
-        </ul>
-        <h3>Lifestyle & Self-Help</h3>
-        <ul>
-            <li>Regular exercise, mindfulness, relaxation techniques</li>
-            <li>Journaling, sleep hygiene, social connection</li>
-            <li>Routine, nutrition, and early intervention for subclinical anxiety</li>
-        </ul>
-        <img src="images/anxiety5.jpg" alt="Calm person practicing mindfulness">
-    </section>
+    </div>
 
-    <section id="help">
-        <h2>6. Where to Go for Help?</h2>
-        <ul>
-            <li>General Practitioner (GP): First contact; can refer to psychologists or specialists</li>
-            <li>Psychologists / Mental Health Professionals: CBT and other therapies (available via Medicare Better Access in Australia)</li>
-            <li>Online Resources: APS, Healthdirect, NIMH (USA)</li>
-            <li>Support Campaigns: “Can We Talk?” encourages early help-seeking and coping strategies</li>
-        </ul>
-        <img src="images/anxiety6.jpg" alt="Support group for anxiety">
-    </section>
-
-    <section id="references">
-        <h2>7. References</h2>
-        <ul>
-            <li>Australian Bureau of Statistics / AIHW (2020–2022)</li>
-            <li>Wikipedia – Anxiety Disorder</li>
-            <li>World Health Organization – Anxiety factors</li>
-            <li>National Mental Health Commission (Australia)</li>
-            <li>RACGP – Australian prevalence</li>
-            <li>Australian Psychological Society (APS)</li>
-            <li>News.com.au – Subclinical anxiety trends</li>
-        </ul>
-    </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2025 Anxiety Awareness Project</p>
-</footer>
-
+    <script>
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach(button => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("active");
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 </body>
 </html>
