@@ -1,121 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anxiety Investigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            margin: 20px;
-        }
-        h1 {
-            color: #007ACC;
-            text-align: center;
-        }
-        .collapsible {
-            background-color: #fff;
-            color: #007ACC;
-            cursor: pointer;
-            padding: 15px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            border-radius: 10px;
-            margin-bottom: 5px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .active, .collapsible:hover {
-            background-color: #e6f2ff;
-        }
-        .content {
-            padding: 0 15px 15px 15px;
-            display: none;
-            overflow: hidden;
-            background-color: #fff;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-        a {
-            color: #007ACC;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul.references {
-            padding-left: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anxiety Investigation</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f5f6fa;
+        color: #2c3e50;
+        margin: 0;
+        padding: 0 20px;
+    }
+    header {
+        background-color: #2980b9;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom: 5px solid #1c5980;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    section {
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    section img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin: 15px 0;
+    }
+    h2 {
+        color: #2980b9;
+        margin-top: 0;
+        position: relative;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #2980b9;
+        border-radius: 2px;
+    }
+    p {
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+    .references {
+        padding-left: 20px;
+        list-style-type: decimal;
+    }
+    .references a {
+        color: #2980b9;
+        text-decoration: none;
+    }
+    .references a:hover {
+        text-decoration: underline;
+    }
+    /* Simple CSS toggle for collapsibles without JS */
+    input[type="checkbox"] {
+        display: none;
+    }
+    label {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 15px;
+        background: #ecf0f1;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        transition: background 0.3s;
+    }
+    label:hover {
+        background: #d6eaf8;
+    }
+    .toggle-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+    input[type="checkbox"]:checked ~ .toggle-content {
+        max-height: 1000px;
+    }
+</style>
 </head>
 <body>
+
+<header>
     <h1>Anxiety Investigation</h1>
+    <p>Understanding the causes, symptoms, and management of anxiety disorders</p>
+</header>
 
-    <button class="collapsible">Investigation Area: Anxiety</button>
-    <div class="content">
-        <img src="https://images.unsplash.com/photo-1532634896-26909d0d7f31?fit=crop&w=800&q=80" alt="Person looking stressed">
-        <p>Anxiety is a natural human emotion that everyone experiences from time to time, often as a reaction to stress or uncertain situations. However, anxiety becomes a disorder when it is excessive, persistent, and interferes with daily life. Anxiety disorders are more than temporary worry or fear—they are mental health conditions that can significantly affect a person’s emotional, physical, and social wellbeing.</p>
-    </div>
+<!-- Investigation Area -->
+<input type="checkbox" id="section1">
+<label for="section1">Investigation Area: Anxiety</label>
+<div class="toggle-content">
+    <section>
+        <img src="https://images.unsplash.com/photo-1532634896-26909d0d7f31?fit=crop&w=800&q=80" alt="Person stressed">
+        <p>Anxiety is a natural human emotion that everyone experiences from time to time. It becomes a disorder when it is excessive, persistent, and interferes with daily life. Anxiety disorders affect emotional, physical, and social wellbeing significantly.</p>
+    </section>
+</div>
 
-    <button class="collapsible">Prevalence</button>
-    <div class="content">
+<!-- Prevalence -->
+<input type="checkbox" id="section2">
+<label for="section2">Prevalence</label>
+<div class="toggle-content">
+    <section>
         <img src="https://images.unsplash.com/photo-1596496058371-7e0ad08c03fa?fit=crop&w=800&q=80" alt="Graph illustration">
-        <p>Anxiety disorders are among the most common mental health conditions worldwide. According to research, approximately 1 in 4 people will experience an anxiety disorder at some point in their lives. It can affect people of all ages, genders, and backgrounds, though studies show that women are more likely to be diagnosed than men.</p>
-    </div>
+        <p>Anxiety disorders are among the most common mental health conditions worldwide. Approximately 1 in 4 people will experience an anxiety disorder at some point in their lives. Women are more likely to be diagnosed than men.</p>
+    </section>
+</div>
 
-    <button class="collapsible">Signs and Symptoms</button>
-    <div class="content">
-        <img src="https://images.unsplash.com/photo-1573497019417-6bfbf2c0f8b6?fit=crop&w=800&q=80" alt="Person holding head, stressed">
-        <p>The signs of anxiety disorders include persistent, uncontrollable worry or fear, often about everyday situations. People may experience restlessness, irritability, or physical symptoms such as a racing heart, sweating, or tension. Difficulty concentrating, trouble sleeping, and avoiding certain situations are also common indicators. The symptoms may vary in intensity but often interfere with daily functioning.</p>
-    </div>
+<!-- Signs and Symptoms -->
+<input type="checkbox" id="section3">
+<label for="section3">Signs and Symptoms</label>
+<div class="toggle-content">
+    <section>
+        <img src="https://images.unsplash.com/photo-1573497019417-6bfbf2c0f8b6?fit=crop&w=800&q=80" alt="Person stressed">
+        <p>Signs include persistent, uncontrollable worry or fear, restlessness, irritability, racing heart, tension, difficulty concentrating, trouble sleeping, and avoidance of situations. Symptoms interfere with daily functioning.</p>
+    </section>
+</div>
 
-    <button class="collapsible">Risk Factors and Causes</button>
-    <div class="content">
-        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=crop&w=800&q=80" alt="Child feeling upset">
-        <p>Anxiety can arise from a combination of genetic, environmental, and psychological factors. Exposure to childhood trauma, abuse, or the loss of a loved one can increase the risk of developing an anxiety disorder. Chronic stress, certain medical conditions, and chemical imbalances in the brain can also contribute. Life experiences, personality traits, and family history play a role in how susceptible someone is to anxiety disorders.</p>
-    </div>
+<!-- Risk Factors -->
+<input type="checkbox" id="section4">
+<label for="section4">Risk Factors and Causes</label>
+<div class="toggle-content">
+    <section>
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=crop&w=800&q=80" alt="Child upset illustration">
+        <p>Causes include genetic, environmental, and psychological factors. Childhood trauma, abuse, loss, chronic stress, medical conditions, and brain chemical imbalances increase risk. Personality traits and family history also contribute.</p>
+    </section>
+</div>
 
-    <button class="collapsible">Treatments and Strategies</button>
-    <div class="content">
+<!-- Treatments -->
+<input type="checkbox" id="section5">
+<label for="section5">Treatments and Strategies</label>
+<div class="toggle-content">
+    <section>
         <img src="https://images.unsplash.com/photo-1598289348408-8d95d0024d96?fit=crop&w=800&q=80" alt="Person meditating">
-        <p>Anxiety can be managed through various treatments and coping strategies. Cognitive-behavioral therapy (CBT) is a widely used approach that helps people change unhelpful thought patterns. Medication, such as antidepressants or anti-anxiety drugs, may also be prescribed by healthcare professionals. Lifestyle strategies, including regular exercise, mindfulness, meditation, and stress management techniques, can support mental wellbeing. Learning relaxation techniques and developing healthy daily routines are also helpful.</p>
-    </div>
+        <p>Treatments include cognitive-behavioral therapy (CBT), medication, lifestyle strategies like exercise, mindfulness, meditation, and stress management. Relaxation techniques and healthy routines support wellbeing.</p>
+    </section>
+</div>
 
-    <button class="collapsible">Where to Go for Help</button>
-    <div class="content">
-        <img src="https://images.unsplash.com/photo-1506679183170-0d9d0f693d70?fit=crop&w=800&q=80" alt="Support group">
-        <p>People experiencing anxiety should seek professional help from a psychologist, psychiatrist, or general practitioner. Support services such as helplines, counselling centers, and mental health organizations can provide immediate guidance and resources. Talking to trusted family members or friends about anxiety can also be an important first step. Early intervention often leads to better outcomes.</p>
-    </div>
+<!-- Where to Go for Help -->
+<input type="checkbox" id="section6">
+<label for="section6">Where to Go for Help</label>
+<div class="toggle-content">
+    <section>
+        <img src="https://images.unsplash.com/photo-1506679183170-0d9d0f693d70?fit=crop&w=800&q=80" alt="Support group illustration">
+        <p>Seek help from psychologists, psychiatrists, or GPs. Helplines, counseling centers, and mental health organizations provide resources. Talking to trusted family or friends is also important. Early intervention improves outcomes.</p>
+    </section>
+</div>
 
-    <button class="collapsible">References</button>
-    <div class="content">
+<!-- References -->
+<input type="checkbox" id="section7">
+<label for="section7">References</label>
+<div class="toggle-content">
+    <section>
         <ul class="references">
             <li>Mayo Clinic. (2023). <a href="https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961?utm_source=chatgpt.com" target="_blank">Anxiety disorders: Symptoms and causes</a>.</li>
             <li>National Institute of Mental Health. (2023). <a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders?utm_source=chatgpt.com" target="_blank">Anxiety disorders</a>.</li>
             <li>Beyond Blue. (2023). <a href="https://www.beyondblue.org.au/mental-health/anxiety" target="_blank">Anxiety</a>.</li>
         </ul>
-    </div>
+    </section>
+</div>
 
-    <script>
-        const collapsibles = document.querySelectorAll(".collapsible");
-        collapsibles.forEach(button => {
-            button.addEventListener("click", () => {
-                button.classList.toggle("active");
-                const content = button.nextElementSibling;
-                content.style.display = content.style.display === "block" ? "none" : "block";
-            });
-        });
-    </script>
 </body>
 </html>
